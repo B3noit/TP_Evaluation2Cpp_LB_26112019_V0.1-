@@ -11,7 +11,7 @@ int main()
 
 
 	cVecteur vecteur();//Création d'un vecteur avec le constructeur "par défaut"
-	cVecteur vecteur2(1,2,3); //Création d'un vecteur avec le deuxième constructeur avec paramètre
+	cVecteur vecteur2(1,2,4); //Création d'un vecteur avec le deuxième constructeur (énoncé B Exercice 69)
 
 	//Système pause
 	system("pause");

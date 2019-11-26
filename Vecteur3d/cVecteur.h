@@ -10,13 +10,9 @@ private: //Accessible que dans la classe elle même
 public://Accessible partout, dans et à l'extérieur de la classe
 
 
-	//Constructeur "par défaut" sans paramètres
-	cVecteur();
-
-	//Constructeur avec paramètres
+	//Constructeur avec paramètres initialisé à 0 si non remplis (énocé b Exercice 69)
 	cVecteur(float f_X, float f_Y, float f_Z);
 };
-
 
 
 
