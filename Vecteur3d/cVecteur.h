@@ -50,7 +50,7 @@ public://Accessible partout, dans et à l'extérieur de la classe
 
 
 	//METHODES
-	bool coincide(const cVecteur *pcVecteur) const; //passage par adresse Exercice 70 énocé B
+	bool coincide(const cVecteur &cVecteur) const; //passage par références Exercice 70 énoncé C
 };
 
 

@@ -14,7 +14,7 @@ int main()
 
 	cVecteur vecteur2(1,2,3);
 
-	std::cout << "Les deux vecteurs coincident-ils 1 pour oui, 0 pour non : " << vecteur1.coincide(&vecteur2) << "\n";//Par Adresse
+	std::cout << "Les deux vecteurs coincident-ils 1 pour oui, 0 pour non : " << vecteur1.coincide(vecteur2) << "\n";//Par références
 																														//Exercice 70 énoncé B
 
 

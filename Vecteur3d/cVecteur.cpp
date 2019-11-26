@@ -1,7 +1,7 @@
 #include "cVecteur.h"
 
 
-////cVecteur::coincide par adresse/////////////////////////////////////////////////////////
+////cVecteur::coincide par références/////////////////////////////////////////////////////////
 //
 //BUT : Vérifier si 2 vecteurs coincident.
 //
@@ -11,7 +11,7 @@
 //
 //SORTIE : Un Booleen 
 /////////////////////////////////////////////////////////////////////////////////////
-bool cVecteur::coincide(const cVecteur *pcVecteur) const
+bool cVecteur::coincide(const cVecteur &cVecteur) const
 {
-	return (this->f_X == pcVecteur->f_X && this->f_Y == pcVecteur->f_Y && this->f_Z == pcVecteur->f_Z);//passage par adresse Exercice 70 énocé B
+	return (this->f_X == cVecteur.f_X && this->f_Y == cVecteur.f_Y && this->f_Z == cVecteur.f_Z);//passage par adresse Exercice 70 énocé B
 }
