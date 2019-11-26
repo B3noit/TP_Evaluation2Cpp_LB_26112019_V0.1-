@@ -10,8 +10,13 @@ private: //Accessible que dans la classe elle même
 public://Accessible partout, dans et à l'extérieur de la classe
 
 
-	//Constructeur avec paramètres initialisé à 0 si non remplis (énocé b Exercice 69)
-	cVecteur(float f_X, float f_Y, float f_Z);
+	//Constructeur inline avec paramètres (énocé c Exercice 69)
+	inline cVecteur(float f_X, float f_Y, float f_Z) {
+
+		this->f_X = f_X;
+		this->f_Y = f_Y;
+		this->f_Z = f_Z;
+	}
 };
 
 
