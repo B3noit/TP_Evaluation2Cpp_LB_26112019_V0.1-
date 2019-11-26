@@ -12,10 +12,10 @@ int main()
 
 	cVecteur vecteur1(6,6,6);
 
-	cVecteur vecteur2(1,2,3);
+	cVecteur  vecteur2(1,2,3);
 
-	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(vecteur1).toString() << std::endl; //passage par référence + renvoie par référence 
-																													//Exercice 71 énoncé B
+	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(&vecteur1)->toString() << std::endl; //passage par adresse + renvoie par adresse
+																													//Exercice 71 énoncé C
 
 	//Système pause
 	system("pause");

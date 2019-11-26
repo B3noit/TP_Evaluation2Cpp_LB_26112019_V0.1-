@@ -43,17 +43,17 @@ float cVecteur::norme() const
 //
 //SORTIE : On retourne un cVecteur qui dispose de la plus grande norme.
 /////////////////////////////////////////////////////////////////////////////////////
-const cVecteur& cVecteur::norMax(cVecteur& cVecteurCompare) const
+const cVecteur * cVecteur::norMax(cVecteur * pVecteurCompare) const
 {
-	if (this->norme() > cVecteurCompare.norme()) {
-		return *this;
+	if (this->norme() > pVecteurCompare->norme()) {
+		return this;
 	}
 	else{
-		if (this->norme() == cVecteurCompare.norme()){
-			return *this;
+		if (this->norme() == pVecteurCompare->norme()){
+			return this;
 		}
 		else{
-			return cVecteurCompare;
+			return pVecteurCompare;
 		}
 	}
 }

@@ -56,8 +56,7 @@ public://Accessible partout, dans et à l'extérieur de la classe
 	//METHODES
 	bool coincide(const cVecteur &cVecteur) const; //passage par références Exercice 70 énoncé C
 	float norme() const;
-
-	const cVecteur & norMax(cVecteur & cVecteurCompare) const; //passage par référence + renvoie par référence Exercice 71 énoncé B
+	const cVecteur * norMax(cVecteur * pVecteurCompare) const; //passage par adresse + renvoie par adresse Exercice 71 énoncé C
 	std::string toString() const;
 
 };
