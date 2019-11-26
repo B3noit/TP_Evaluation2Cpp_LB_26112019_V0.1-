@@ -151,10 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cPoint.cpp" />
     <ClCompile Include="cVecteur.cpp" />
     <ClCompile Include="Vecteur3d.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cPoint.h" />
     <ClInclude Include="cVecteur.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

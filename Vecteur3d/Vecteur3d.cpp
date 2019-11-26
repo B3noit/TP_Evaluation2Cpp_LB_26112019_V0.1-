@@ -2,25 +2,26 @@
 //
 #include <iostream>
 #include <cstdlib>
-#include "cVecteur.h"
+#include "cPoint.h"
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Je créé un point,\n";	//Exercice 73
+	cPoint *point1 = new cPoint();
+	std::cout << "Nombre d'instances de la classe cPoint qui existent : " << cPoint::nombre() << std::endl;
 
+	std::cout << "Je créé un point,\n";	//Exercice 73
+	cPoint *point2 = new cPoint();
+	std::cout << "Nombre d'instances de la classe cPoint qui existent : " << cPoint::nombre() << std::endl;
 
-	cVecteur vecteur1(6,6,6);
+	std::cout << "Je détruis un point,\n";	//Exercice 73
+	delete point1;
+	std::cout << "Nombre d'instances de la classe cPoint qui existent : " << cPoint::nombre() << std::endl;
 
-	cVecteur  vecteur2(1,2,3);
-
-	std::cout << "La somme du vecteur1 et vecteur2 est " << vecteur2.sommeVecteur(vecteur1).toString() << std::endl; //Somme de 2 vecteurs
-																													//Exercice 72 
-
-
-	std::cout << "Le produit scalaire du vecteur1 et vecteur2 est " << vecteur2.produitScalaire(vecteur1) << std::endl; //produit scalaire de 2 vecteurs
-																													//Exercice 72
-
-	//Système pause
+	std::cout << "Je détruis encore un point,\n";	//Exercice 73
+	delete point2;
+	std::cout << "Nombre d'instances de la classe cPoint qui existent : " << cPoint::nombre() << std::endl;
+	//Système pause;
 	system("pause");
 }
