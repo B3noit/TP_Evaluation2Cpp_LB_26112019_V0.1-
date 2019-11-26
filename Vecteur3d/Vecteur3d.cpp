@@ -14,7 +14,8 @@ int main()
 
 	cVecteur vecteur2(1,2,3);
 
-	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(vecteur1).toString() << std::endl;//Exercie 71 énoncé A
+	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(vecteur1).toString() << std::endl; //passage par référence + renvoie par référence 
+																													//Exercice 71 énoncé B
 
 	//Système pause
 	system("pause");
