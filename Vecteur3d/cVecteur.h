@@ -1,4 +1,8 @@
 #pragma once
+
+#include <cmath>
+#include <string>
+#include <iostream>
 class cVecteur
 {
 private: //Accessible que dans la classe elle même
@@ -10,7 +14,7 @@ private: //Accessible que dans la classe elle même
 public://Accessible partout, dans et à l'extérieur de la classe
 
 
-	//Constructeur inline avec paramètres (énocé c Exercice 69)
+	//Constructeur inline avec paramètres
 	inline cVecteur(float f_X, float f_Y, float f_Z) {
 
 		this->f_X = f_X;
@@ -51,6 +55,9 @@ public://Accessible partout, dans et à l'extérieur de la classe
 
 	//METHODES
 	bool coincide(const cVecteur &cVecteur) const; //passage par références Exercice 70 énoncé C
+	float norme() const;
+	cVecteur norMax(cVecteur cVecteurCompare) const; //passage par valeur Exercice 71 énoncé A
+	std::string toString() const;
 };
 
 

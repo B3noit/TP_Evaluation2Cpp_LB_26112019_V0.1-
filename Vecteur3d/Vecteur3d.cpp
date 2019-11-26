@@ -10,16 +10,11 @@ int main()
     std::cout << "Hello World!\n";
 
 
-	cVecteur vecteur1(1,2,3);
+	cVecteur vecteur1(6,6,6);
 
 	cVecteur vecteur2(1,2,3);
 
-	std::cout << "Les deux vecteurs coincident-ils 1 pour oui, 0 pour non : " << vecteur1.coincide(vecteur2) << "\n";//Par références
-																														//Exercice 70 énoncé B
-
-
-
-
+	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(vecteur1).toString() << std::endl;//Exercie 71 énoncé A
 
 	//Système pause
 	system("pause");
