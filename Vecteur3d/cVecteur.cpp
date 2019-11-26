@@ -1,6 +1,13 @@
 #include "cVecteur.h"
 
 
+//CONSTRUCTEUR PAR DEFAUT
+cVecteur::cVecteur() {
+	this->f_X = 0;
+	this->f_Y = 0;
+	this->f_Z= 0;
+}
+
 ////cVecteur::coincide par références/////////////////////////////////////////////////////////
 //
 //BUT : Vérifier si 2 vecteurs coincident.
@@ -78,4 +85,37 @@ std::string cVecteur::toString() const
 			+ std::to_string(this->f_Y) + " ,z: "
 			+ std::to_string(this->f_Z) + " ]";
 	}
+}
+
+
+////cVecteur::sommeVecteur/////////////////////////////////////////////////////////
+//
+//BUT : Renvoyer la somme de deux vecteurs
+//
+//PRINCIPE : On additionnes les données membres corespondantes entre-elles et on retourne le vecteur qui en résulte.
+//
+//ENTREE : On a un vecteur en instance et un vecteur qu'on additonne en argument.
+//
+//SORTIE : On retourne un vecteur qui est la somme des deux vcteurs d'ENTREE.
+/////////////////////////////////////////////////////////////////////////////////////
+cVecteur cVecteur::sommeVecteur(cVecteur cVecteurPlus) const {
+
+	return cVecteur(this->f_X + cVecteurPlus.f_X, this->f_Y + cVecteurPlus.f_Y, this->f_Z + cVecteurPlus.f_Z);
+
+}
+
+
+////cVecteur::produitScalaire/////////////////////////////////////////////////////////
+//
+//BUT : Renvoyer le produit scalaire de deux vecteurs
+//
+//PRINCIPE : On calcule le produit scalaire à l'aide de la formule : VecteurA(x1, y1, y2) et VecteurB(x2, y2, z2) =  x1*x2 + y1*y2 + z1*z2
+//
+//ENTREE : On a un vecteur en instance et un vecteur en argument.
+//
+//SORTIE : On retourne un float qui correspond au produit scalaire des deux vcteurs d'ENTREE.
+/////////////////////////////////////////////////////////////////////////////////////
+float cVecteur::produitScalaire(cVecteur cVecteurPlus) const
+{
+	return this->f_X * cVecteurPlus.f_X + this->f_Y * cVecteurPlus.f_Y + this->f_Z * cVecteurPlus.f_Z;
 }

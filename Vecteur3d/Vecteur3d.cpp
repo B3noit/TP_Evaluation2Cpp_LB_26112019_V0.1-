@@ -14,8 +14,12 @@ int main()
 
 	cVecteur  vecteur2(1,2,3);
 
-	std::cout << "Les valeurs du vecteur le plus grand sont :" << vecteur2.norMax(&vecteur1)->toString() << std::endl; //passage par adresse + renvoie par adresse
-																													//Exercice 71 énoncé C
+	std::cout << "La somme du vecteur1 et vecteur2 est " << vecteur2.sommeVecteur(vecteur1).toString() << std::endl; //Somme de 2 vecteurs
+																													//Exercice 72 
+
+
+	std::cout << "Le produit scalaire du vecteur1 et vecteur2 est " << vecteur2.produitScalaire(vecteur1) << std::endl; //produit scalaire de 2 vecteurs
+																													//Exercice 72
 
 	//Système pause
 	system("pause");

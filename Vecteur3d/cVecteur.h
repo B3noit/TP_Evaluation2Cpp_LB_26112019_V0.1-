@@ -13,6 +13,8 @@ private: //Accessible que dans la classe elle même
 
 public://Accessible partout, dans et à l'extérieur de la classe
 
+	//Constructeur "par défaut"
+	cVecteur();
 
 	//Constructeur inline avec paramètres
 	inline cVecteur(float f_X, float f_Y, float f_Z) {
@@ -58,6 +60,8 @@ public://Accessible partout, dans et à l'extérieur de la classe
 	float norme() const;
 	const cVecteur * norMax(cVecteur * pVecteurCompare) const; //passage par adresse + renvoie par adresse Exercice 71 énoncé C
 	std::string toString() const;
+	cVecteur sommeVecteur(cVecteur cVecteurPlus) const;//Exercice 72
+	float produitScalaire(cVecteur cVecteurPlus) const;//Exercice 72
 
 };
 
